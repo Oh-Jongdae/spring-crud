@@ -18,7 +18,7 @@ public class UserModel {
     @Column(unique = true, nullable = false)
     private String email;
 
-    @Size(min = 8, message = "Minimum password length: 8 characters")
+    @Size(min = 3, message = "Minimum password length: 8 characters")
     private String password;
 
     public Integer getId() {
